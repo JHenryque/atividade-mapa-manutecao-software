@@ -1,4 +1,4 @@
-package com.example.servlets;
+package com.bemvindo.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
@@ -11,7 +11,8 @@ import java.io.PrintWriter;
 public class HelloServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
-        System.out.println("Inicializando Servlet");
+        super.init();
+        System.out.println("Bem-vindo à aplicação Servlet");
     }
 
     @Override
@@ -26,12 +27,10 @@ public class HelloServlet extends HttpServlet {
         out.println("<h1>Bem-vindo à aplicação Servlet!</h1>");
         out.println("</body>");
         out.println("</html>");
-        System.out.println("Servlet Chamando (service)");
     }
 
     @Override
     public void destroy() {
         super.destroy();
-        System.out.println("Servlet destruido");
     }
 }

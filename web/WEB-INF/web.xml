@@ -11,12 +11,12 @@
     <!-- Configuração do servlet -->
     <servlet>
         <servlet-name>BemVindoServlet</servlet-name>
-        <servlet-class>com.example.servlets.HelloServlet</servlet-class>
+        <servlet-class>com.bemvindo.servlets.HelloServlet</servlet-class>
     </servlet>
 
-    <!-- Mapeamento da URL para o servlet -->
+    <!-- Mapeamento da URL -->
     <servlet-mapping>
         <servlet-name>BemVindoServlet</servlet-name>
-        <url-pattern>/home</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>
